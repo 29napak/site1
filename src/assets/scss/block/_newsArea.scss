@@ -1,0 +1,78 @@
+
+
+@use "utility/margin" as m;
+@use "parts/title" as t;
+
+.newsArea{
+    background: #f3f3f5;
+    &__container{
+        @include m.margin;
+        padding-top: 65px;
+        padding-bottom: 97px;
+
+        &__title{
+            h2{
+                @include t.title;
+            }
+        }
+        &__content{
+            display: flex;
+            flex-direction: column;
+            padding-top: 16px;
+            .tabtitle{
+                display: flex;
+                justify-content: space-between;
+                &__item{
+                    width: 480px;
+                    height: 68px;
+                    background: #e5e5e5;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.2s ease-in-out;
+                    &.active{
+                        background-color: #D7003A;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    &:hover{
+                        background-color: #D7003A;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    p{
+                        font-size: 24px;
+                        font-weight: 700;
+                        color: #ffffff;
+                    }
+                }
+                
+            }
+            .tabdetail{
+                border:24px #D7003A solid;
+                background-color: #ffffff;
+                &__wrap{
+                    display: none;
+                    transition: all 0.3s ease-in-out;
+                    padding: 10px 32px 36px;
+                    &.active{
+                        display: block;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    dl{
+                        display: flex;
+                        align-items: center;
+                        border-bottom:1.5px #E5E5E5 solid ;
+                        padding: 28px 0 22px;
+                        margin: 0;
+                        gap: 24px;
+                        dd{
+                            margin: 0;
+                        }
+                        dt{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

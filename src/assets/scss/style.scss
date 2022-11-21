@@ -1,0 +1,19 @@
+@use "base/reset";
+@use "base/base";
+
+@use "block/header";
+@use "block/footer";
+@use "block/heroArea";
+@use "block/aboutArea";
+@use "block/newsArea";
+@use "block/faqArea";
+@use "block/contactArea";
+
+
+
+@use "parts/button";
+@use "config/mixins" as mix;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Gallery with Vanilla JS</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    
+    <header>
+        <div class="headerArea">
+        <div class="headerArea__container">
+            <div class="headerArea__container__detail">
+                <h1><img src="./assets/images/Red_MC_Lockup_RGB.png" alt=""></h1>
+                <nav>
+                    <ul>
+                        <li class="navi">
+                            <p class="navlist">COMPANY</p>
+                            <div class="dropDown">
+                                <ul>
+                                    <li><a href="">サンプル</a></li>
+                                    <li><a href="">サンプル</a></li>
+                                    <li><a href="">サンプル</a></li>
+                                    <li><a href="">サンプル</a></li>
+                                    <li><a href="">サンプル</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navi">
+                            <p class="navlist" >NEWS</p>
+                            <div class="dropDown">
+                                <ul>
+                                    <li><a href="">サンプル</a></li>
+                                    <li><a href="">サンプル</a></li>
+                                    <li><a href="">サンプル</a></li>
+                                    <li><a href="">サンプル</a></li>
+                                    <li><a href="">サンプル</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navi">
+                            <p class="navlist">FAQ</p>
+                            <div class="dropDown">
+                                <ul>
+                                    <li><a href="">サンプル</a></li>
+                                    <li><a href="">サンプル</a></li>
+                                    <li><a href="">サンプル</a></li>
+                                    <li><a href="">サンプル</a></li>
+                                    <li><a href="">サンプル</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navi">
+                            <p class="navlist" >RECRUIT</p>
+                            <div class="dropDown">
+                                <ul>
+                                    <li><a href="">サンプル</a></li>
+                                    <li><a href="">サンプル</a></li>
+                                    <li><a href="">サンプル</a></li>
+                                    <li><a href="">サンプル</a></li>
+                                    <li><a href="">サンプル</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="headerArea__container__menuBtn">
+                <button>
+                    <div class="line01"></div>
+                    <div class="line02"></div>
+                    <div class="line03"></div>
+                </button>
+            </div>
+
+            <div class="headerArea__container__menuCollap">
+                <div class="headerArea__container__menuCollap__wrap">
+                    <ul>
+                        <li><a href="">COMPANY</a></li>
+                        <li><a href="">NEWS</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">RECUIT</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </header>
+  
+    <div class="heroArea">
+        <div class="panel-main">
+            <img src="./assets/images/slide1.png" id="selected">
+        </div>
+        <div class="thumbs">
+            <div id="thumbs1" data-src="./assets/images/slide1.png"></div>
+            <div id="thumbs2" data-src="./assets/images/slide2.png"></div>
+            <div id="thumbs3" data-src="./assets/images/slide3.png"></div>
+            
+        </div>
+        <div class="heroArea__container">
+            <div class="heroArea__container__content">
+                <p>ひとりでも多くの「優秀なデジタルクリエイター」と<br>
+                    「優秀でありたいデジタルクリエイター」を輩出し、<br>
+                    持続可能な社会に向けたデジタルイノベーション創造を「人の力」で支える。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutArea">
+        <div class="aboutArea__container">
+            <div class="aboutArea__container__title">
+                <h2>ABOUT</h2>
+            </div>
+            <div class="aboutArea__container__content">
+                <p>ひとりでも多くの「優秀なデジタルクリエイター」を輩出し、持続可能な社会に向けたデジタルイノベーションの
+                    創造を「人の力」で支えることをミッションに掲げ、数多くのIT関連企業にデジタルプロフェッショナル人材を
+                      提供しています。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="newsArea">
+        <div class="newsArea__container">
+            <div class="newsArea__container__title">
+                <h2>NEWS</h2>
+            </div>
+            <div class="newsArea__container__content">
+                <div class="tabtitle">
+                    <div class="tabtitle__item active" data-target="#content01">
+                        <p>お知らせ</p>
+                    </div>
+                    <div class="tabtitle__item" data-target="#content02">
+                        <p>ニュースリリース</p>
+                    </div>
+                </div>
+                <div class="tabdetail">
+                    <div class="tabdetail__wrap active" id="content01">
+                        <dl>
+                            <dd>2020.10.21</dd>
+                            <dt>年末年始休業日のお知らせ(content01)</dt>
+                        </dl>
+                        <dl>
+                            <dd>2020.10.21</dd>
+                            <dt>年末年始休業日のお知らせ</dt>
+                        </dl>
+                        <dl>
+                            <dd>2020.10.21</dd>
+                            <dt>年末年始休業日のお知らせ</dt>
+                        </dl>
+                        <dl>
+                            <dd>2020.10.21</dd>
+                            <dt>年末年始休業日のお知らせ</dt>
+                        </dl>
+                        <dl>
+                            <dd>2020.10.21</dd>
+                            <dt>年末年始休業日のお知らせ</dt>
+                        </dl>
+                    </div>
+                    <div class="tabdetail__wrap" id="content02">
+                        <dl>
+                            <dd>2020.10.21</dd>
+                            <dt>年末年始休業日のお知らせ(content02)</dt>
+                        </dl>
+                        <dl>
+                            <dd>2020.10.21</dd>
+                            <dt>年末年始休業日のお知らせ</dt>
+                        </dl>
+                        <dl>
+                            <dd>2020.10.21</dd>
+                            <dt>年末年始休業日のお知らせ</dt>
+                        </dl>
+                        <dl>
+                            <dd>2020.10.21</dd>
+                            <dt>年末年始休業日のお知らせ</dt>
+                        </dl>
+                        <dl>
+                            <dd>2020.10.21</dd>
+                            <dt>年末年始休業日のお知らせ</dt>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faqArea">
+        <div class="faqArea__container">
+            <div class="faqArea__container__title">
+                <h2>FAQ</h2>
+            </div>
+            <div class="faqArea__container__content">
+                <dl class="accodion">
+                    <dd>
+                        <div class="title">
+                            <div class="title__icon"><p><span>Q</span></p></div>
+                            <p>常駐開始までどれぐらいかかりますか？ </p>
+                        </div>
+                        <div class="title__btn">
+                            <div class="line01"></div>
+                            <div class="line02"></div>
+                        </div>
+                    </dd>
+                    <dt>
+                        <div class="detail">
+                            <div class="detail__icon"><p><span>A</span></p></div>
+                            <p>最短5営業日での常駐開始実績がございます。</p>
+                        </div>
+                    </dt>
+                </dl>
+                <dl class="accodion">
+                    <dd>
+                        <div class="title">
+                            <div class="title__icon"><p><span>Q</span></p></div>
+                            <p>常駐開始までどれぐらいかかりますか？ </p>
+                        </div>
+                        <div class="title__btn">
+                            <div class="line01"></div>
+                            <div class="line02"></div>
+                        </div>
+                    </dd>
+                    <dt>
+                        <div class="detail">
+                            <div class="detail__icon"><p><span>A</span></p></div>
+                            <p>最短5営業日での常駐開始実績がございます。</p>
+                        </div>
+                    </dt>
+                </dl>
+                <dl class="accodion" >
+                    <dd>
+                        <div class="title">
+                            <div class="title__icon"><p><span>Q</span></p></div>
+                            <p>常駐開始までどれぐらいかかりますか？ </p>
+                        </div>
+                        <div class="title__btn">
+                            <div class="line01"></div>
+                            <div class="line02"></div>
+                        </div>
+                    </dd>
+                    <dt>
+                        <div class="detail">
+                            <div class="detail__icon"><p><span>A</span></p></div>
+                            <p>最短5営業日での常駐開始実績がございます。</p>
+                        </div>
+                    </dt>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <div class="contactArea">
+        <div class="contactArea__container">
+            <div class="contactArea__container__title">
+                <h2>CONTACT</h2>
+            </div>
+            <div class="contactArea__container__content">
+                <button>
+                    <p>お問い合わせはこちら</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><small>Copyright © Members Co.,Ltd. All rights reserved</small></p>
+
+    </footer>
+
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'lwc4yky',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+    <script src="./assets/js/gallery.min.js"></script>
+    <script id="__bs_script__">//<![CDATA[
+        document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.27.9'><\/script>".replace("HOST", location.hostname));
+    //]]></script>
+</body>
+
+</html>

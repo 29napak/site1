@@ -1,0 +1,143 @@
+
+@use "utility/margin" as m;
+@use "parts/title" as t;
+
+
+.faqArea{
+    &__container{
+        @include m.margin;
+        padding-top: 65px;
+        &__title{
+           h2{
+            @include t.title;
+           }
+        }
+        &__content{
+            padding-top: 1px;
+            .accodion{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 24px;
+                position: relative;
+                transition: all 0.5s ease-in-out;
+                &.active{
+                    dd{
+                        background-color: #d7003a;
+                        transition: all 0.2s ease-in-out;
+                        .title{
+                            p{
+                                color: #fff;
+                            }
+                            &__btn{
+                                .line01,.line02{
+                                    background-color: #fff;
+                                    transition: all 0.5s ease-in-out;
+                                }
+                                .line01{
+                                    transform: rotate(45deg);
+                                }
+                                .line02{
+                                    transform: rotate(135deg);
+                                    top: -2px;
+                                }
+
+                            }
+                        }
+                    }
+                    dt{
+                        .detail{
+                            
+                            height: 88px;
+                            transition: all 0.5s ease-in-out;
+                            border: 1px #d7003a solid;
+                        }
+                    }
+                }
+                dd{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 88px;
+                    border: 1px red solid;
+                    margin: 0;
+                    padding: 0 39.2px 0 30px ;
+                    transition: all 0.2s ease-in-out;
+                    .title{
+                        height: inherit;
+                        display: flex;
+                        align-items: center;
+                        gap: 32px;
+                        &__icon{
+                            width: 44px;
+                            height: 44px;
+                            border: 1px solid #d7003a;
+                            border-radius: 50%;
+                            background-color: #fff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            p{
+                                span{
+                                    font-size: 24px;
+                                    font-family: Lato, Lato-Regular;
+                                    font-weight: 400;
+                                    color: #d7003a;
+                                }
+                            }
+                        }
+                        p{
+                            color: #d7003a;
+                        }
+                        &__btn{
+                            .line01,.line02{
+                                width: 30px;
+                                height: 2px;
+                                background-color: #d7003a;
+                                position: relative;
+                                transition: all 0.5s ease-in-out;
+                            }
+                            .line02{
+                                transform: rotate(90deg);
+                            }
+                        }
+                    }
+                }
+                dt{
+                    .detail{
+                        display: flex;
+                        align-items: center;
+                        height: 88px;
+                        border: 1px #fff solid;
+                        margin: 0;
+                        padding: 0 39.2px 0 30px ;
+                        gap: 32px;
+                        height: 0;
+                        overflow: hidden;
+                        transition: all 0.5s ease-in-out;
+                        
+                        &__icon{
+                            width: 44px;
+                            height: 44px;
+                            border-radius: 50%;
+                            background-color: #d7003a;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            p{
+                                span{
+                                    font-size: 24px;
+                                    font-family: Lato, Lato-Regular;
+                                    font-weight: 400;
+                                    color: #ffffff;
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+
+}

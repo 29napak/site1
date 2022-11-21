@@ -1,0 +1,68 @@
+@use "utility/margin" as m;
+@use "parts/title" as t;
+
+.heroArea{
+  padding-top: 100px;
+  position: relative;
+  &__container{
+    position: absolute;
+    top: 100px;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    &__content{
+      @include m.margin;
+      p{
+        font-size: 28px;
+        font-weight: 700;
+        text-align: left;
+        color: #ffffff;
+        line-height: 64px;
+      }
+    }
+
+  }
+}
+
+
+
+  .panel-main img,
+  .thumbs img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    object-position: center center;
+  }
+  
+  .thumbs {
+    width: 140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-top: 38px;
+  }
+  .thumbs > div{
+    width: 20px;
+    width: 20px;
+    height: 20px;
+    background: #e5e5e5;
+    border-radius: 50%;
+  }
+  .thumbs > div.active{
+    background: #d7003a;
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in 1 forwards;
+  }
+
+
+

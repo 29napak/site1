@@ -1,0 +1,24 @@
+@use "utility/margin" as m;
+@use "parts/title" as t;
+
+.aboutArea{
+    &__container{
+        @include m.margin;
+        padding-top: 98px;
+        padding-bottom: 60px;
+    
+        &__title{
+            h2{
+                @include t.title;
+            }
+        }
+        &__content{
+            p{
+                font-size: 24px;
+                font-weight: 700;
+                color: #333333;
+                line-height: 64px;
+            }
+        }
+    }
+}
